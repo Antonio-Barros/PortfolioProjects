@@ -139,7 +139,7 @@ JOIN PortfolioProject..CovidVaccinations vac
 	AND dea.date = vac.date
 WHERE dea.continent IS NOT NULL
 
-Select *, (RollingPeopleVaccinated/population)*100 AS PercentagePeopleVaccinated
+SELECT *, (RollingPeopleVaccinated/population)*100 AS PercentagePeopleVaccinated
 FROM #PercentPopulationVaccinated
 
 
